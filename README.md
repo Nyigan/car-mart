@@ -10,7 +10,7 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-## <a name="tech-stack"> Tech Stack</a>
+## Tech Stack
 
 - Next.js
 - TypeScript
@@ -18,10 +18,8 @@ Make sure you have the following installed on your machine:
 
 ## Next.Js Bug
 
-url:<https://github.com/vercel/next.js/discussions/60146>
+This is the error at the time of publishing this repo url:<https://github.com/vercel/next.js/discussions/60146>
 
-## Deploy on Vercel
+## Deployed on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deployed here URI:<https://car-mart-seven.vercel.app/>
