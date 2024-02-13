@@ -5,14 +5,13 @@ import { useState, Fragment } from 'react';
 import { Combobox, Transition } from '@headlessui/react';
 import { manufacturers } from '@/constants';
 import { SearchManufacturerProps } from '@/types';
-import { act } from 'react-dom/test-utils';
 
 
 const SearchManufacturer = ({manufacturer, setManufacturer}:SearchManufacturerProps) => {
   const [query, setQuery] = useState("");
 
   const filteredManufacturers = query ==="" ? manufacturers : manufacturers.filter((item) => (item.toLowerCase()
-    .replace(/\s+/g, "").includes(query.toLocaleLowerCase().replace(/\s+/g, "")
+    .replace(/\s+/g, "").includes(query.toLowerCase().replace(/\s+/g, "")
   )))
   return (
     <div className="search-manufactirer">
@@ -27,11 +26,11 @@ const SearchManufacturer = ({manufacturer, setManufacturer}:SearchManufacturerPr
             width={20}
             height={20}
             className="ml-4"
-            alt="Car logo"
+            alt="car logo"
             />
           </Combobox.Button>
           <Combobox.Input className="search-manufacturer__input"
-          placeholder="Volkswagen"
+          placeholder="Volkswagen..."
           displayValue={(manufacturer: string) => manufacturer }
           onChange={(e) => setQuery(e.target.value)}
           />
@@ -76,8 +75,8 @@ const SearchManufacturer = ({manufacturer, setManufacturer}:SearchManufacturerPr
           </Combobox.Options>
         
         </Transition>
+    
       </Combobox>
-      SearchManufacturer
       </div>
   )
 }
